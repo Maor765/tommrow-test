@@ -1,0 +1,14 @@
+Node Version
+v22.17.1
+
+install backend
+install front
+
+go to backend../setup and run below commands
+
+🔥 Build & Run Mongo
+docker build -t my-mongo .
+docker run -d -p 27017:27017 --name mongodb my-mongo
+
+Notes:
+UI is not prefect looking, haveing issues in styles using prime react
