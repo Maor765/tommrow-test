@@ -10,5 +10,7 @@ go to backend../setup and run below commands
 docker build -t my-mongo .
 docker run -d -p 27017:27017 --name mongodb my-mongo
 
+change .env-use to .env
+
 Notes:
 UI is not prefect looking, haveing issues in styles using prime react
