@@ -4,7 +4,6 @@ import { getCityFromCoordinates } from '../utils/reverseGeocode';
 import { getWeatherData } from '../utils/getWeatherData';
 
 export const getWeather = async (req: Request, res: Response) => {
-  console.log(`🌍-----`);
   const { lat, lon } = req.query;
   if (!lat || !lon) {
     return res

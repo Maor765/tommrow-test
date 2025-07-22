@@ -55,25 +55,6 @@ const getLatestWeatherData = async (
     (w) => w.coordinates.lat === lat && w.coordinates.lon === lon,
   );
   return weatherData;
-  // if (weatherData) {
-  //   return weatherData;
-  // }
-  // // If no weather data found, fetch it from the API
-  // try {
-  //   const data = await getWeatherData(lat, lon);
-  //   return {
-  //     coordinates: { lat, lon },
-  //     temperature: data.data.values.temperature,
-  //     windSpeed: data.data.values.windSpeed,
-  //     precipitation: data.data.values.precipitationProbability,
-  //   };
-  // } catch (error: any) {
-  //   console.error(
-  //     '❌ Error fetching latest weather data:',
-  //     error.response?.data || error.message,
-  //   );
-  //   return null;
-  // }
 };
 
 const evaluateCondition = (
